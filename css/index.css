@@ -33,8 +33,18 @@ header {
     background-color: #429ad9;
 }
 
+.logo span {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
 .logo img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .nav {
@@ -69,6 +79,48 @@ header {
     padding-right: 10px;
     margin-bottom: 10px;
 
+}
+
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+
+    article {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+
+    .nav li a {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .news li {
+        width: 50%;
+    }
+
+    .news li:nth-child(1) {
+        width: 100% !important;
+        /* height: 266px; */
+        /* background-color: pink; */
+    }
+
+    .publish {
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+    }
+
+    .publish h3 {
+        font-size: 15px;
+    }
 }
 
 .news li a {
